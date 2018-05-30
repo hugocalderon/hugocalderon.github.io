@@ -102,7 +102,7 @@ $(document).scroll(function(){
 
 	var valueToEvaluate = 50;  //Desktop
 	if(heightTechnical > 3000){ //Movil
-       valueToEvaluate = 1790;
+       valueToEvaluate = 1827; //Subir el valor entre mas rapido se quiere iniciar
 	}
 
 	console.log(top)
