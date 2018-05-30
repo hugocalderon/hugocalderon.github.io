@@ -97,9 +97,16 @@ $(document).ready(function(e) {
 //var windowBottom = $(window).height();
 var index=0;
 $(document).scroll(function(){
+	var heightTechnical = $('.technical').height();
 	var top = $('.technical').height()-$(window).scrollTop();
+
+	var valueToEvaluate = 50;  //Desktop
+	if(heightTechnical > 3000){ //Movil
+       valueToEvaluate = 1790;
+	}
+
 	console.log(top)
-	if(top<50){
+	if(top<valueToEvaluate){
 		if(index==0){	
 			
 			$('.chart').easyPieChart({
