@@ -99,7 +99,7 @@ var index=0;
 $(document).scroll(function(){
 	var top = $('.technical').height()-$(window).scrollTop();
 	console.log(top)
-	if(top<-300){
+	if(top<50){
 		if(index==0){	
 			
 			$('.chart').easyPieChart({
