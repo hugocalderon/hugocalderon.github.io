@@ -1,5 +1,5 @@
 # Site settings
-title: Will Arevalo Blog
+title: Hugo Calderón Blog
 description: This is only other blog of a Enthusiastic programmer
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://hugocalderon.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
