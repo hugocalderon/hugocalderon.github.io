@@ -1,0 +1,18 @@
+<div id="particles-js">
+   <div class="content" itemscope itemtype="http://schema.org/Person">
+       <h1>
+         <span class="site-title" itemprop="name" ><a href="{{ site.url }}" style="text-decoration:none;color:#fff">{{site.username}}</a></span>
+         <span class="site-description" id="site-desc" itemprop="jobTitle" >{{site.user_title}}</span>
+       </h1>
+       <div class="icons-header">
+         <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon fa fa-envelope"></i></a>
+         <a aria-label="My Instagram" target="_blank" href="https://instagram.com/{{site.twitter_username}}"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
+         <a aria-label="My Linkedin" target="_blank" href="https://linkedin.com/in/{{site.gplus_username}}"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+         <a aria-label="My Github" target="_blank" href="https://github.com/{{site.github_username}}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+       </div>
+       <a class="link" href="{{ "#about" | prepend: site.baseurl }}" data-scroll>About Me</a>
+       <a class="link" href="{{ "#projects" | prepend: site.baseurl }}" data-scroll>Projects</a>
+       <a class="link" href="{{ "/blog.html" | prepend: site.baseurl }}">Blog</a>
+   </div>
+   <a class="down" id ="downArrow" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+ </div>

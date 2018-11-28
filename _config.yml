@@ -1,0 +1,19 @@
+# Site settings
+title: Will Arevalo Blog
+description: This is only other blog of a Enthusiastic programmer
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://willarevalo.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: William Arevalo
+user_title: Full-Stack Developer
+email: willarevalo.developer@gmail.com
+twitter_username: williiamfabian
+github_username:  WillArevalo
+gplus_username: william-arevalo-rodriguez-b86b34144
+
+# Google-analytics
+google-analytics:
+  id: "UA-98210758-2"
+
+exclude: ['package.json', 'src' , 'node_modules']

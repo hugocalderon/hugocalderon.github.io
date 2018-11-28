@@ -1,0 +1,26 @@
+---
+layout: blog
+---
+<style>
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+<div class="container">
+  <h2 class="spacing">{{ page.title | capitalize }}</h2>
+
+  <div class="blog-post spacing">
+    <p class="summary"><small><a class="decorate" href="{{ absolute_url }}/category/{{page.category}}">{{ page.category }}</a></small><span class="small u-pull-right"><small>{{ page.date | date: '%B %d, %Y' }}</small></span></p>
+    {{ content }}
+  </div>
+  <hr class="hr-text" data-content="END">
+  <div class="PageNavigation">
+      {% if page.previous.url %}
+        <a class="prev decorate" href="{{page.previous.url}}">&laquo; {{page.previous.title | capitalize}}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="next decorate" href="{{page.next.url}}">{{page.next.title | capitalize}} &raquo;</a>
+      {% endif %}
+    </div>
+</div>

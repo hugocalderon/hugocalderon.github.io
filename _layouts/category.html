@@ -1,0 +1,49 @@
+---
+layout: page
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+  {% include head.html %}
+  <body>
+      {% include header.html %}
+      <br>
+      <br>
+      <section id="blog">
+          
+          <div class="container">
+              <div class="container">
+                  <h2 class="spacing">Blog | {{page.category}}</h2>
+            {% for post in site.categories[page.category] %}
+                <div class="blog-post spacing">
+                    <h3><a class="decorate" href="{{ post.url | absolute_url }}" style="text-decoration: none;">{{ post.title | capitalize }}</a></h3>
+                    <p class="summary">
+                        <small>
+                            <a class="decorate" href="{{ absolute_url }}/category/{{page.category}}">{{ page.category }}</a>
+                        </small>
+                      <span class="u-pull-right">
+                          <small>
+                            {{ post.date | date: '%B %d, %Y' }}
+                          </small>
+                      </span>
+                    </p>
+                    {{ post.excerpt }}
+                  </div>
+            {% endfor %}    
+            </div>
+            </div>
+        {% include pie.html %}
+      </section>   
+      {% include footer.html %}
+      <script>
+          document.getElementById("site-desc").innerHTML = "Personal Blog";
+          document.getElementById("downArrow").href = "#blog";
+      </script>
+  </body>
+
+

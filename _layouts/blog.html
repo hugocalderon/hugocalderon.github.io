@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+  {% include head.html %}
+  <body>
+      {% include header.html %}
+      <br>
+      <br>
+      <section id="blog">
+        <div class="container">
+            {{ content }}
+        </div>    
+        {% include pie.html %}
+      </section>   
+      {% include footer.html %}
+      <script>
+          document.getElementById("site-desc").innerHTML = "Personal Blog";
+          document.getElementById("downArrow").href = "#blog";
+      </script>
+  </body>
