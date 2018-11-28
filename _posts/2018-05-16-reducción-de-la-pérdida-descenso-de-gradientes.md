@@ -4,7 +4,7 @@ title: 'Reducción de la pérdida: Descenso de gradientes'
 category: Machine Learning
 ---
 
-[El diagrama de enfoque iterativo](https://willarevalo.github.io/machine%20learning/2018/05/10/reducci%C3%B3n-de-la-p%C3%A9rdida-un-enfoque-iterativo.html)&nbsp;conten&iacute;a un cuadro verde con afirmaciones sin fundamento llamado "Actualizar par&aacute;metros". Ahora reemplazaremos esa soluci&oacute;n algor&iacute;tmica m&aacute;gica por algo m&aacute;s sustancial.
+[El diagrama de enfoque iterativo](https://#/machine%20learning/2018/05/10/reducci%C3%B3n-de-la-p%C3%A9rdida-un-enfoque-iterativo.html)&nbsp;conten&iacute;a un cuadro verde con afirmaciones sin fundamento llamado "Actualizar par&aacute;metros". Ahora reemplazaremos esa soluci&oacute;n algor&iacute;tmica m&aacute;gica por algo m&aacute;s sustancial.
 
 Sup&oacute;n que tuvi&eacute;ramos el tiempo y los recursos de c&oacute;mputo para calcular la p&eacute;rdida de todos los valores posibles de w1. Para el tipo de problemas de regresi&oacute;n que hemos estado examinando, la representaci&oacute;n resultante de p&eacute;rdida frente a w1 siempre ser&aacute; convexa. En otras palabras, la representaci&oacute;n siempre tendr&aacute; forma de taz&oacute;n, como la siguiente:
 
