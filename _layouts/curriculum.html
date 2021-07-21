@@ -1,3 +1,16 @@
-<script>
-alert('TEST');
-</script>
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body  style="background-color: aliceblue;">
+<br>
+<br>
+<section id="portafolio">
+    {% include portafolio.html %}
+    <div class="container">
+        <p style="font-weight: bold; display: none;">Puedes visitar mi perfil principal en este  <a href="https://hugocalderon.github.io">enlace</a></p>
+        <hr class="hr-text" data-content="END">
+    </div>
+    {% include pie.html %}
+</section>
+{% include footer.html %}
+</body>
